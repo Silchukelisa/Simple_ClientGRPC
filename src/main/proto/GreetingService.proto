@@ -12,4 +12,7 @@ message HelloResponse{
 
 service GreetingService{
   rpc greeting(HelloRequest) returns (HelloResponse);
+
+  //когда хотим возвращать поток данных
+  //rpc greeting(HelloRequest) returns (stream HelloResponse);
 }
